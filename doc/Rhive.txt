@@ -1,1 +1,57 @@
-Rhive
+                               Rhive 手册
+Rhive将hive检索hadoop文件系统中海量数据的功能和R快速建模分析的功能结合起来可以在R中非常
+方便的使用hadoop中的数据来建模。
+Rhive 工作基本流程
+RawData ------> hadoop(dfs)-------->hive(建立metadata)-------->R(分析，建模)
+Rhive在github上的项目地址： https://github.com/nexr/RHive.git
+Rhive的安装部署比较麻烦，但是使用起来非常方便，一般考虑到效率的问题Rhive使用最多的功能就是检索数据
+将hadoop中的数据取到R环境中。
+然后按照类似与SQL的HiveQL查询语言来查询数据
+#!/usr/local/bin/Rscript
+library(rJava)
+library(Rserve)
+library(RHive)
+rhive.init();
+rhive.connect();
+#其中使用最多的就是这个函数。
+#直接在R中使用HiveQL查询。
+d <- rhive.query('select * from ia')
+#rhive.query('load data inpath \'input/data.txt\' overwrite into table gener ')
+dataframe <-d;
+tableinformation<-rhive.query('show  tables ');
+tableinformation
+class(dataframe);
+summary(dataframe);
+gener<-rhive.query('select * from gener');
+colnames(gener)
+class(gener)
+str(gener)
+#summary(gener)
+t1<-as.numeric(as.character(gener[,1]))
+gener<-gener[,-1];
+gener[,1]<-as.numeric(as.character(gener[,1]))
+gener[,2]<-as.numeric(as.character(gener[,2]))
+gener[,3]<-as.numeric(as.character(gener[,3]))
+gener
+model<-lm(col2~col3,data=gener);
+summary(model);
+model
+#gener
+rhive.close()
+在传统数据库中，表的模式是在数据加载时强制确定的。如果在加载时发现数据不符合模式，则拒绝加载数据。因为
+数据是写入数据库时对照模式进行检查。这种模式也叫做写时模式。
+在Hive中创建表时，默认情况下Hive负责管理数据。这意味着Hive把数据移入它的“仓库目录”（waerhouse directory）.
+另一种选择是创建一个“外部表”（external table）。这会让Hive到仓库目录以外的位置访问数据。
+这两种表的区别表现在LOAD和DROP命令的语意上。
+  CREATE TABLE MANAGED_TABLE (DUMY STRING);
+ LOAD DATA INPATH '/usr/tom/data.txt' INTO TABLE MANAGED_TABLE;
+ 把文件 hdfs://usr/tom/data.txt  移动到Hive的仓库目录中 MANAGED_TABLE 表的目录，
+即hdfs://user/hive/warehouse/MANAGED_TABLE.
+  由于加载操作就是文件系统中的文件移动，因此它的执行速度很快。
+  如果丢弃一个托管表，可使用
+   DROP TABLE MANAGED_TABLE
+然后这个表（包括它的元数据和数据）会被删除。
+还有一个表叫外部表：
+ 对于外部表，这两个操作的意义就不一样了。由自己来控制数据的创建和删除。
+外部表数据的位置需要在创建表的时候指明。
+丢弃外部表时，Hive只删除元数据，不碰数据。
