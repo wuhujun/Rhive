@@ -1,0 +1,2 @@
+关于hive应用的方法的一些资料：
+阿里数据平台：http://www.alidata.org/archives/category/cloud-computing/hive
