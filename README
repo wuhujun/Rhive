@@ -1,2 +1,13 @@
 1.Rhive 是通过hive在R中实现分布式计算的功能，可以在R中使用HQL，而且允许非常方
 便的在R中使用Hive的功能。
+2.Rhive中的几个组件：
+Requirements
+- Java 1.6 
+- R 2.13.0
+- Rserve 0.6-0
+- rJava 0.9-0
+- Hadoop 0.20.x (x >= 1)
+- Hive 0.8.x (x >= 0)
+
+   
+
