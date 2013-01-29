@@ -1,0 +1,220 @@
+写好Hive 程序的五个提示
+
+使用Hive可以高效而又快速地编写复杂的MapReduce查询逻辑。但是某些情况下，因为不熟悉数据特性，或没有遵循Hive的优化约定，Hive计算任务会变得非常低效，甚至无法得到结果。一个”好”的Hive程序仍然需要对Hive运行机制有深入的了解。
+
+有一些大家比较熟悉的优化约定包括：Join中需要将大表写在靠右的位置；尽量使用UDF而不是transfrom……诸如此类。下面讨论5个性能和逻辑相关的问题，帮助你写出更好的Hive程序。
+全排序
+
+Hive的排序关键字是SORT BY，它有意区别于传统数据库的ORDER BY也是为了强调两者的区别–SORT BY只能在单机范围内排序。考虑以下表定义：
+
+CREATE TABLE if not exists t_order(
+
+id int, -- 订单编号
+
+sale_id int, -- 销售ID
+
+customer_id int, -- 客户ID
+
+product _id int, -- 产品ID
+
+amount int -- 数量
+
+) PARTITIONED BY (ds STRING);
+
+在表中查询所有销售记录，并按照销售ID和数量排序：
+
+set mapred.reduce.tasks=2;
+
+Select sale_id, amount from t_order
+
+Sort by sale_id, amount;
+
+这一查询可能得到非期望的排序。指定的2个reducer分发到的数据可能是（各自排序）：
+
+Reducer1：
+
+Sale_id | amount
+
+0 | 100
+
+1 | 30
+
+1 | 50
+
+2 | 20
+
+Reducer2：
+
+Sale_id | amount
+
+0 | 110
+
+0 | 120
+
+3 | 50
+
+4 | 20
+
+因为上述查询没有reduce key，hive会生成随机数作为reduce key。这样的话输入记录也随机地被分发到不同reducer机器上去了。为了保证reducer之间没有重复的sale_id记录，可以使用DISTRIBUTE BY关键字指定分发key为sale_id。改造后的HQL如下：
+
+set mapred.reduce.tasks=2;
+
+Select sale_id, amount from t_order
+
+Distribute by sale_id
+
+Sort by sale_id, amount;
+
+这样能够保证查询的销售记录集合中，销售ID对应的数量是正确排序的，但是销售ID不能正确排序，原因是hive使用hadoop默认的HashPartitioner分发数据。
+
+这就涉及到一个全排序的问题。解决的办法无外乎两种：
+
+1.) 不分发数据，使用单个reducer：
+
+set mapred.reduce.tasks=1;
+
+这一方法的缺陷在于reduce端成为了性能瓶颈，而且在数据量大的情况下一般都无法得到结果。但是实践中这仍然是最常用的方法，原因是通常排序的查询是为了得到排名靠前的若干结果，因此可以用limit子句大大减少数据量。使用limit n后，传输到reduce端（单机）的数据记录数就减少到n* （map个数）。
+
+2.) 修改Partitioner，这种方法可以做到全排序。这里可以使用Hadoop自带的TotalOrderPartitioner（来自于Yahoo!的TeraSort项目），这是一个为了支持跨reducer分发有序数据开发的Partitioner，它需要一个SequenceFile格式的文件指定分发的数据区间。如果我们已经生成了这一文件（存储在/tmp/range_key_list，分成100个reducer），可以将上述查询改写为
+
+set mapred.reduce.tasks=100;
+
+set hive.mapred.partitioner=org.apache.hadoop.mapred.lib.TotalOrderPartitioner;
+
+set total.order.partitioner.path=/tmp/ range_key_list;
+
+Select sale_id, amount from t_order
+
+Cluster by sale_id
+
+Sort by amount;
+
+有很多种方法生成这一区间文件（例如hadoop自带的o.a.h.mapreduce.lib.partition.InputSampler工具）。这里介绍用Hive生成的方法，例如有一个按id有序的t_sale表：
+
+CREATE TABLE if not exists t_sale (
+
+id int,
+
+name string,
+
+loc string
+
+);
+
+则生成按sale_id分发的区间文件的方法是：
+
+create external table range_keys(sale_id int)
+
+row format serde
+
+'org.apache.hadoop.hive.serde2.binarysortable.BinarySortableSerDe'
+
+stored as
+
+inputformat
+
+'org.apache.hadoop.mapred.TextInputFormat'
+
+outputformat
+
+'org.apache.hadoop.hive.ql.io.HiveNullValueSequenceFileOutputFormat'
+
+location '/tmp/range_key_list';
+
+ 
+
+insert overwrite table range_keys
+
+select distinct sale_id
+
+from source t_sale sampletable(BUCKET 100 OUT OF 100 ON rand()) s
+
+sort by sale_id;
+
+生成的文件（/tmp/range_key_list目录下）可以让TotalOrderPartitioner按sale_id有序地分发reduce处理的数据。区间文件需要考虑的主要问题是数据分发的均衡性，这有赖于对数据深入的理解。
+怎样做笛卡尔积？
+
+当Hive设定为严格模式（hive.mapred.mode=strict）时，不允许在HQL语句中出现笛卡尔积，这实际说明了Hive对笛卡尔积支持较弱。因为找不到Join key，Hive只能使用1个reducer来完成笛卡尔积。
+
+当然也可以用上面说的limit的办法来减少某个表参与join的数据量，但对于需要笛卡尔积语义的需求来说，经常是一个大表和一个小表的Join操作，结果仍然很大（以至于无法用单机处理），这时MapJoin才是最好的解决办法。
+
+MapJoin，顾名思义，会在Map端完成Join操作。这需要将Join操作的一个或多个表完全读入内存。
+
+MapJoin的用法是在查询/子查询的SELECT关键字后面添加/*+ MAPJOIN(tablelist) */提示优化器转化为MapJoin（目前Hive的优化器不能自动优化MapJoin）。其中tablelist可以是一个表，或以逗号连接的表的列表。tablelist中的表将会读入内存，应该将小表写在这里。
+
+PS：有用户说MapJoin在子查询中可能出现未知BUG。在大表和小表做笛卡尔积时，规避笛卡尔积的方法是，给Join添加一个Join key，原理很简单：将小表扩充一列join key，并将小表的条目复制数倍，join key各不相同；将大表扩充一列join key为随机数。
+怎样写exist in子句？
+
+Hive不支持where子句中的子查询，SQL常用的exist in子句需要改写。这一改写相对简单。考虑以下SQL查询语句：
+
+SELECT a.key, a.value
+
+FROM a
+
+WHERE a.key in
+
+(SELECT b.key
+
+FROM B);
+
+可以改写为
+
+SELECT a.key, a.value
+
+FROM a LEFT OUTER JOIN b ON (a.key = b.key)
+
+WHERE b.key <> NULL;
+
+一个更高效的实现是利用left semi join改写为：
+
+SELECT a.key, a.val
+
+FROM a LEFT SEMI JOIN b on (a.key = b.key);
+
+left semi join是0.5.0以上版本的特性。
+Hive怎样决定reducer个数？
+
+Hadoop MapReduce程序中，reducer个数的设定极大影响执行效率，这使得Hive怎样决定reducer个数成为一个关键问题。遗憾的是Hive的估计机制很弱，不指定reducer个数的情况下，Hive会猜测确定一个reducer个数，基于以下两个设定：
+
+1. hive.exec.reducers.bytes.per.reducer（默认为1000^3）
+
+2. hive.exec.reducers.max（默认为999）
+
+计算reducer数的公式很简单：
+
+N=min(参数2，总输入数据量/参数1)
+
+通常情况下，有必要手动指定reducer个数。考虑到map阶段的输出数据量通常会比输入有大幅减少，因此即使不设定reducer个数，重设参数2还是必要的。依据Hadoop的经验，可以将参数2设定为0.95*(集群中TaskTracker个数)。
+
+合并MapReduce操作
+
+Multi-group by
+
+Multi-group by是Hive的一个非常好的特性，它使得Hive中利用中间结果变得非常方便。例如，
+
+FROM (SELECT a.status, b.school, b.gender
+
+FROM status_updates a JOIN profiles b
+
+ON (a.userid = b.userid and
+
+a.ds='2009-03-20' )
+
+) subq1
+
+INSERT OVERWRITE TABLE gender_summary
+
+PARTITION(ds='2009-03-20')
+
+SELECT subq1.gender, COUNT(1) GROUP BY subq1.gender
+
+INSERT OVERWRITE TABLE school_summary
+
+PARTITION(ds='2009-03-20')
+
+SELECT subq1.school, COUNT(1) GROUP BY subq1.school
+
+上述查询语句使用了Multi-group by特性连续group by了2次数据，使用不同的group by key。这一特性可以减少一次MapReduce操作。
+
+Multi-distinct
+
