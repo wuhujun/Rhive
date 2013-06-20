@@ -1,0 +1,107 @@
+package client;
+
+/**
+ *基本的表管理和访问 
+ */
+
+import java.io.IOException;
+import  org.apache.hadoop.conf.Configuration;
+import  org.apache.hadoop.hbase.HBaseConfiguration;
+import org.apache.hadoop.hbase.HColumnDescriptor;
+import org.apache.hadoop.hbase.HTableDescriptor;
+import org.apache.hadoop.hbase.MasterNotRunningException;
+import org.apache.hadoop.hbase.ZooKeeperConnectionException;
+import org.apache.hadoop.hbase.client.Get;
+import org.apache.hadoop.hbase.client.HBaseAdmin;
+import org.apache.hadoop.hbase.client.HTable;
+import org.apache.hadoop.hbase.client.Put;
+import org.apache.hadoop.hbase.client.Result;
+import org.apache.hadoop.hbase.client.ResultScanner;
+import org.apache.hadoop.hbase.client.Scan;
+import org.apache.hadoop.hbase.util.Bytes;
+
+
+
+public class ExampleClient {
+   public static void main(String args[]){
+	   //获取HBase系统的配置对象。
+	   Configuration config = HBaseConfiguration.create();
+	   
+	   try {
+	    //HBase的管理角色对象。
+		HBaseAdmin admin = new HBaseAdmin(config);
+		//表的描述对象，对表结构进行配置。
+		HTableDescriptor htd  = new HTableDescriptor("test_03"); 
+		//列的描述对象，对列的结构进行配置。
+		HColumnDescriptor hcd_data = new HColumnDescriptor("data");
+		HColumnDescriptor hcd_value = new HColumnDescriptor("value");
+		//增加列簇。
+		htd.addFamily(hcd_data);
+		htd.addFamily(hcd_value);
+		//创建表。
+		HTableDescriptor [] table_exists =admin.listTables();
+		//判断将要创建的表是否存在。
+		byte [] createTableName =htd.getName();
+		for(HTableDescriptor table : table_exists){
+			if(Bytes.equals(createTableName,table.getName() )){
+				System.out.println("The table  you want to create  is  existed!");
+				admin.disableTable(table.getName());
+				admin.deleteTable(table.getName());
+			}
+		}
+		admin.createTable(htd);
+		
+		byte [] tablename = htd.getName();
+		HTableDescriptor [] tables = admin.listTables();
+		//判断表是否创建成功，如果没有创建成功，结束进程。
+		if(tables.length !=1 && Bytes.equals(tablename, tables[0].getName())){	
+			throw new IOException("Failed create of table ");
+		}
+		//创建一个表句柄对象。
+		HTable table = new HTable(config, tablename);
+		byte [] row1 = Bytes.toBytes("row1");
+		//插入操作句柄对象。
+		Put p1 = new Put(row1);
+		byte [] databytes = Bytes.toBytes("data");
+		p1.add(databytes, Bytes.toBytes("1"), Bytes.toBytes("value1"));
+		table.put(p1);
+		
+		byte [] row2 = Bytes.toBytes("row2"); 
+		Put p2 = new Put(row2);
+		byte [] valuebytes = Bytes.toBytes("value");
+		p2.add(valuebytes, Bytes.toBytes("3"), Bytes.toBytes("value2"));
+		table.put(p2);
+		for(int i= 3 ; i !=100; i++){
+		     byte [] row = Bytes.toBytes("row"+String.valueOf(i));
+		     Put p = new Put(row);
+		     byte [] valuebyte = Bytes.toBytes("value");
+		     p.add(valuebyte ,Bytes.toBytes(String.valueOf(i)),
+		    		 Bytes.toBytes("value"+String.valueOf(i)));
+		     table.add(p);
+		}
+		
+		Get g= new Get(row1);
+		Result result = table.get(g);
+		System.out.println("Get : " +result );
+		Scan scan = new Scan();
+		ResultScanner scanner = table.getScanner(scan);
+		
+		try {
+		    for(Result scannerResult : scanner){
+			   System.out.println("Scan :" + scannerResult);
+		    }
+		}finally {
+			scanner.close();
+		}
+	} catch (MasterNotRunningException error) {
+		// TODO Auto-generated catch block
+		error.printStackTrace();
+	} catch (ZooKeeperConnectionException error) {
+		// TODO Auto-generated catch block
+		error.printStackTrace();
+	} catch (IOException error) {
+		// TODO Auto-generated catch block
+		error.printStackTrace();
+	} 
+   }
+}

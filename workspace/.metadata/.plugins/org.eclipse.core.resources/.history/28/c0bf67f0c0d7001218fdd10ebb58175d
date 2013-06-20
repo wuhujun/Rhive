@@ -1,0 +1,48 @@
+package gener;
+public class Helper {
+   public static void main(String args[]){
+	   System.out.println("OK");
+	   
+	   System.out.println(Counters.ROWS);
+	   
+	   String example_str = "abc"  ;
+	   
+	   System.out.println(example_str.indexOf(0, 'c'));
+	   String a = "Aio1200_sdaosoo    mawii "    ;
+	   String [] b=a.split(" ");
+	   System.out.println(a);
+	   for(String str : b){
+		   System.out.println(str);
+	   }
+	   
+   }
+   public static enum Counters {ROWS} 
+   
+   public static void Cat(){
+	   for(int i =0 ;i!=100;i++){
+		   System.out.println(i*i);
+	   }
+   }
+   
+}
+class Mapper{
+	private int ID ;
+	
+	private double Score ; 
+	
+	public void SetID( int id){
+		this.ID = id ;
+	}
+	
+	public int GetId(){
+		return this.ID;
+	}
+	
+	public void SetScore(double score){
+		this.Score = score ;
+	}
+	
+	public double GetScore(){
+		return this.Score ;
+	}
+}

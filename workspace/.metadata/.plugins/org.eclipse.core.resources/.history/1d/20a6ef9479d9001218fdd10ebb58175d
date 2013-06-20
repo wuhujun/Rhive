@@ -1,0 +1,45 @@
+package trs;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.MalformedURLException;
+import java.net.URL;
+
+import org.apache.hadoop.io.IOUtils;
+  /**
+   * 从HDFS中载入数据到HBase.
+   * @author ia
+   *
+   */
+public class LoadDataToHBase {
+    private String url ;
+
+	public String getUrl() {
+		return url;
+	}
+
+	public void setUrl(String url) {
+		this.url = url;
+	}
+
+	@Override
+	public String toString() {
+		return "LoadDataToHBase [url=" + url + "]";
+	}
+
+	public LoadDataToHBase(String url) {
+		this.url = url;
+	}
+    
+	public boolean load( String url ) throws IOException {
+		 InputStream in = null;
+		 try {
+		   in = new URL(url).openStream();
+		   IOUtils.copyBytes(in, System.out, 4096, false);
+		 } finally {
+		   IOUtils.closeStream(in);
+		 }
+		return true ;
+	}
+	 
+}

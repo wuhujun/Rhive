@@ -1,0 +1,90 @@
+package gener;
+
+import java.io.Console; 
+import java.util.regex.Pattern; 
+import java.util.regex.Matcher; 
+/**
+ * 正则表达式在Java中的应用。
+ * @author ia
+ *
+ */
+public class Helper {
+   public static void main(String args[]){
+	   System.out.println("OK");
+	   
+	   System.out.println(Counters.ROWS);
+	   
+	   String example_str = "abc"  ;
+	   
+	   System.out.println(example_str.indexOf(0, 'c'));
+	   String a = "3227001 35      4049    1       3    " +
+	   		"   Dec 30 2008  4:51:00:000AM      F078865         15      1       1 " +
+	   		"      9       1       470000T17710    T177            20081230        0504    2   " +
+	   		"    3       13      3032    1               上海南          SNH     H       55            " +
+	   		"                  杭州            HZH     5751    H       56      CSA                       " +
+	   		"      173     290     0       0       0       0       0       0 " +
+	   		"      0       0       0       0       0       0       0       0    " +
+	   		"   0       0       0       10      0       0       0                      " +
+	   		" H       H1      0       0       0       29016   K00     0                  " +
+	   		"                                                     " +
+	   		"                0       0                       173           " +
+	   		"          4       20081230                        280     A                  " +
+	   		"                                     290     0       0.000   0       SNH   " +
+	   		"          20090101                        00      H1 ";
+	   //匹配日期
+	   String b = a.replaceAll("[0-9[a-z[A-Z[-]]]]", "  " ) ;
+	   System.out.println(b);
+	   String c = a.replaceAll("[0-9&&[345]]", " ");
+	   System.out.println(c.trim());
+	   String d = a.replaceAll("[A-Z[a-z[0-9[-]]]]", "  ");
+	   //匹配始发站和终点站：
+	   String e = a.replaceAll("[A-Za-z0-9-:]" , "  ");
+	   String [] strArray =a.split("   ");
+	   System.out.println(strArray.length);
+       for(int i = 0 ;i <strArray.length ; i++){
+    	   System.out.println("第 " +  i +"个字段为"+ strArray[i]);
+       }
+	   
+     /*	   
+       for(int i=0 ; i< a.length() ;i++){
+		   char ai = a.charAt(i);
+		   if(isChinese(ai)){
+		   System.out.println(ai);
+		   }
+	   }
+	   System.out.println(ExtractChinese("niasas     asasq1 1234 中国"));
+	  */
+	   
+   }
+   //判断字符是否为中文字符。
+   public static boolean isChinese(char a) {
+	        int v = (int)a;
+	        return (v >=19968 && v <= 171941);
+	   }
+   public static String ExtractChinese(String str){
+	   String SubString = new String() ;
+	   for(int i = 0 ;i<str.length(); i++){
+		       if( isChinese(str.charAt(i))){
+		    	   SubString = SubString +str.charAt(i);
+		       }
+	   }
+	   return  SubString;
+   }
+
+   public static enum Counters {ROWS} 
+   
+   public static void Cat(){
+	   for(int i =0 ;i!=100;i++){
+		   System.out.println(i*i);
+	   }
+   }
+   
+}
+class RegexUtil{
+	
+   public String RegDate( String str){
+	   String substr = new String();
+	   
+	   return substr ;
+   }
+}

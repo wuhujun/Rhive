@@ -1,0 +1,43 @@
+package gener;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Extract {
+   /**
+    * 提取始发站和终点站。
+    */
+   public Map <String , String> ExtractStation(String record){
+	     String regex = "\\u4E00-\\u9FA5";
+         Map <String , String > station = new HashMap<String , String>() ;
+         Pattern p = Pattern.compile(regex);
+         Matcher m = p.matcher(record);
+         String [] Stations = new String[2] ;
+         int i =0 ;
+         while(m.find()){
+        	 Stations[i] = m.group();
+        	 i++ ;
+         }
+         station.put(Stations[0], Stations[1]);
+         return station ;
+   }
+   /**
+    * 提取日期
+    */
+   public List<String>  ExtractDate(String record){
+	   String regex = "\\d{4}\\d{2}\\d{2}";
+	   List <String> date = new ArrayList<String>();
+	   //Compiles the given regular expression into a pattern
+	   Pattern pattern = Pattern.compile(regex);  
+	   // Creates a matcher that will match the given input against this pattern.
+	   Matcher matcher = pattern.matcher(record);   
+	   while (matcher.find()) {  
+		   date.add(matcher.group());  
+		} 
+	   return date  ;
+   }
+}

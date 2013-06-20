@@ -1,0 +1,63 @@
+package gener;
+
+import java.io.Console; 
+import java.util.regex.Pattern; 
+import java.util.regex.Matcher; 
+/**
+ * 正则表达式在Java中的应用。
+ * @author ia
+ *
+ */
+public class Helper {
+   public static void main(String args[]){
+	   System.out.println("OK");
+	   
+	   System.out.println(Counters.ROWS);
+	   
+	   String example_str = "abc"  ;
+	   
+	   System.out.println(example_str.indexOf(0, 'c'));
+	   String a = "2bin      中文"    ;
+	   a.replace("b", " " ) ;
+	   System.out.println(a);
+	   for(int i=0 ; i< a.length() ;i++){
+		   char ai = a.charAt(i);
+		   if(isChinese(ai)){
+		   System.out.println(ai);
+		   }
+	   }
+	   System.out.println(ExtractChinese("niasas     asasq1 1234 中国"));
+	   
+   }
+   //判断字符是否为中文字符。
+   public static boolean isChinese(char a) {
+	        int v = (int)a;
+	        return (v >=19968 && v <= 171941);
+	   }
+   public static String ExtractChinese(String str){
+	   String SubString = new String() ;
+	   for(int i = 0 ;i<str.length(); i++){
+		       if( isChinese(str.charAt(i))){
+		    	   SubString = SubString +str.charAt(i);
+		       }
+	   }
+	   return  SubString;
+   }
+
+   public static enum Counters {ROWS} 
+   
+   public static void Cat(){
+	   for(int i =0 ;i!=100;i++){
+		   System.out.println(i*i);
+	   }
+   }
+   
+}
+class RegexUtil{
+	
+   public String RegDate( String str){
+	   String substr = new String();
+	   
+	   return substr ;
+   }
+}

@@ -1,0 +1,19 @@
+package gener;
+
+public class ChineseHandle {
+   private  String str ;
+   
+   public String getStr(){
+	   return this.str ;
+   }
+   
+   public void SetStr( String Str){
+	   this.str = Str ;
+   }
+   
+   public ChineseHandle(String Str){
+	   this.str = Str ;
+   }
+   
+   public 
+}

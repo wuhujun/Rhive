@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench progressCount="58" version="2.0">
+<workbenchAdvisor/>
+<window height="744" maximized="true" width="1024" x="65" y="24">
+<fastViewData fastViewLocation="1024"/>
+<perspectiveBar>
+<itemSize x="160"/>
+</perspectiveBar>
+<coolbarLayout>
+<coolItem id="group.file" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="132" y="30"/>
+<coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="120" y="30"/>
+<coolItem id="org.eclipse.jst.j2ee.J2eeMainActionSet" itemType="typeToolBarContribution" x="84" y="30"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="104" y="30"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="152" y="30"/>
+<coolItem id="org.eclipse.wst.server.ui.internal.webbrowser.actionSet" itemType="typeToolBarContribution" x="40" y="30"/>
+<coolItem id="org.eclipse.wst.ws.explorer.explorer" itemType="typeToolBarContribution" x="40" y="30"/>
+<coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="group.nav" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="184" y="30"/>
+<coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="group.help" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
+</coolbarLayout>
+<page aggregateWorkingSetId="Aggregate for window 1371094527457" focus="true" label="Workspace - Java EE">
+<editors>
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+<part id="8"/>
+<part id="9"/>
+<part id="10"/>
+<part id="11"/>
+<part id="12"/>
+<part id="13"/>
+<part id="14"/>
+<part id="15"/>
+<part id="16"/>
+<part id="17"/>
+<part id="18"/>
+<part id="19"/>
+<part id="20"/>
+<part id="21"/>
+<part id="22"/>
+<part id="23"/>
+<part id="24"/>
+<part id="25"/>
+<part id="26"/>
+<part id="27"/>
+<part id="28"/>
+<part id="29"/>
+<part id="30"/>
+<part id="31"/>
+<part id="32"/>
+<part id="33"/>
+<part id="34"/>
+<part id="35"/>
+<part id="36"/>
+<part id="37"/>
+<part id="38"/>
+<part id="39"/>
+<part id="40"/>
+<part id="41"/>
+<part id="42"/>
+<part id="43"/>
+<part id="44"/>
+<part id="45"/>
+<part id="46"/>
+<part id="47"/>
+<part id="48"/>
+<part id="49"/>
+<part id="50"/>
+<part id="51"/>
+<part id="52"/>
+<part id="53"/>
+<part id="54"/>
+<part id="55"/>
+<part id="56"/>
+<part id="57"/>
+<part id="58"/>
+<part id="59"/>
+<part id="60"/>
+<part id="61"/>
+<part id="62"/>
+<part id="63"/>
+<part id="64"/>
+<part id="65"/>
+<part id="66"/>
+<part id="67"/>
+<part id="68"/>
+<part id="69"/>
+<part id="70"/>
+<part id="71"/>
+<part id="72"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ExampleClient.java" partName="ExampleClient.java" path="/home/ia/workspace/HBaseClient/src/client/ExampleClient.java" title="ExampleClient.java" tooltip="HBaseClient/src/client/ExampleClient.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/HBaseClient/src/client/ExampleClient.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="45" selectionOffset="565" selectionTopPixel="143"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Helper.java" partName="Helper.java" path="/home/ia/workspace/Study/src/gener/Helper.java" title="Helper.java" tooltip="Study/src/gener/Helper.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Study/src/gener/Helper.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="448" selectionTopPixel="212"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PutExample.java" partName="PutExample.java" path="/home/ia/workspace/HBaseClient/src/client/PutExample.java" title="PutExample.java" tooltip="HBaseClient/src/client/PutExample.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/HBaseClient/src/client/PutExample.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="42" selectionOffset="1288" selectionTopPixel="334"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RowCounter.java" partName="RowCounter.java" path="/home/ia/workspace/HBaseClient/src/client/RowCounter.java" title="RowCounter.java" tooltip="HBaseClient/src/client/RowCounter.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/HBaseClient/src/client/RowCounter.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="645" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DeleteListExample.java" partName="DeleteListExample.java" path="/home/ia/workspace/HBaseClient/src/client/DeleteListExample.java" title="DeleteListExample.java" tooltip="HBaseClient/src/client/DeleteListExample.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/HBaseClient/src/client/DeleteListExample.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="635" selectionTopPixel="152"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BatchExample.java" partName="BatchExample.java" path="/home/ia/workspace/HBaseClient/src/client/BatchExample.java" title="BatchExample.java" tooltip="HBaseClient/src/client/BatchExample.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/HBaseClient/src/client/BatchExample.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1359" selectionTopPixel="357"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BatchSameRowExample.java" partName="BatchSameRowExample.java" path="/home/ia/workspace/HBaseClient/src/client/BatchSameRowExample.java" title="BatchSameRowExample.java" tooltip="HBaseClient/src/client/BatchSameRowExample.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/HBaseClient/src/client/BatchSameRowExample.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2222" selectionTopPixel="305"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HBaseHelper.java" partName="HBaseHelper.java" path="/home/ia/workspace/HBaseClient/src/util/HBaseHelper.java" title="HBaseHelper.java" tooltip="HBaseClient/src/util/HBaseHelper.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/HBaseClient/src/util/HBaseHelper.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="7233" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ColumnPaginationFilterExample.java" partName="ColumnPaginationFilterExample.java" path="/home/ia/workspace/HBaseClient/src/filters/ColumnPaginationFilterExample.java" title="ColumnPaginationFilterExample.java" tooltip="HBaseClient/src/filters/ColumnPaginationFilterExample.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/HBaseClient/src/filters/ColumnPaginationFilterExample.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CustomFilter.java" partName="CustomFilter.java" path="/home/ia/workspace/HBaseClient/src/filters/CustomFilter.java" title="CustomFilter.java" tooltip="HBaseClient/src/filters/CustomFilter.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/HBaseClient/src/filters/CustomFilter.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CheckAndDeleteExample.java" partName="CheckAndDeleteExample.java" path="/home/ia/workspace/HBaseClient/src/client/CheckAndDeleteExample.java" title="CheckAndDeleteExample.java" tooltip="HBaseClient/src/client/CheckAndDeleteExample.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/HBaseClient/src/client/CheckAndDeleteExample.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="153" selectionTopPixel="415"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WordCount.java" partName="WordCount.java" path="/home/ia/workspace/WordCount/src/gener/WordCount.java" title="WordCount.java" tooltip="WordCount/src/gener/WordCount.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WordCount/src/gener/WordCount.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1886" selectionTopPixel="383"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MaxTemperatureReducer.java" partName="MaxTemperatureReducer.java" path="/home/ia/workspace/WordCount/src/ch02/MaxTemperature/MaxTemperatureReducer.java" title="MaxTemperatureReducer.java" tooltip="WordCount/src/ch02/MaxTemperature/MaxTemperatureReducer.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WordCount/src/ch02/MaxTemperature/MaxTemperatureReducer.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="827" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MaxTemperatureMapper.java" partName="MaxTemperatureMapper.java" path="/home/ia/workspace/WordCount/src/ch02/MaxTemperature/MaxTemperatureMapper.java" title="MaxTemperatureMapper.java" tooltip="WordCount/src/ch02/MaxTemperature/MaxTemperatureMapper.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WordCount/src/ch02/MaxTemperature/MaxTemperatureMapper.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MaxTemperature.java" partName="MaxTemperature.java" path="/home/ia/workspace/WordCount/src/ch02/MaxTemperature/MaxTemperature.java" title="MaxTemperature.java" tooltip="WordCount/src/ch02/MaxTemperature/MaxTemperature.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WordCount/src/ch02/MaxTemperature/MaxTemperature.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="22"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CRUDExample.java" partName="CRUDExample.java" path="/home/ia/workspace/HBaseClient/src/client/CRUDExample.java" title="CRUDExample.java" tooltip="HBaseClient/src/client/CRUDExample.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/HBaseClient/src/client/CRUDExample.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1522" selectionTopPixel="101"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CheckAndPutExample.java" partName="CheckAndPutExample.java" path="/home/ia/workspace/HBaseClient/src/client/CheckAndPutExample.java" title="CheckAndPutExample.java" tooltip="HBaseClient/src/client/CheckAndPutExample.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/HBaseClient/src/client/CheckAndPutExample.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="44" selectionOffset="823" selectionTopPixel="282"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DeleteExample.java" partName="DeleteExample.java" path="/home/ia/workspace/HBaseClient/src/client/DeleteExample.java" title="DeleteExample.java" tooltip="HBaseClient/src/client/DeleteExample.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/HBaseClient/src/client/DeleteExample.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2592" selectionTopPixel="459"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DeleteListErrorExample.java" partName="DeleteListErrorExample.java" path="/home/ia/workspace/HBaseClient/src/client/DeleteListErrorExample.java" title="DeleteListErrorExample.java" tooltip="HBaseClient/src/client/DeleteListErrorExample.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/HBaseClient/src/client/DeleteListErrorExample.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2150" selectionTopPixel="734"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Configuration.java" partName="Configuration.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/conf/Configuration.java" title="Configuration.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/conf/Configuration.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/conf/Configuration.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5368" selectionTopPixel="2072"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RccTask.java" partName="RccTask.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/record/compiler/ant/RccTask.java" title="RccTask.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/record/compiler/ant/RccTask.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/record/compiler/ant/RccTask.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="25" selectionOffset="1094" selectionTopPixel="1072"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SecretManager.java" partName="SecretManager.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/security/token/SecretManager.java" title="SecretManager.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/security/token/SecretManager.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/security/token/SecretManager.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="25" selectionOffset="976" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HadoopVersionAnnotation.java" partName="HadoopVersionAnnotation.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/HadoopVersionAnnotation.java" title="HadoopVersionAnnotation.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/HadoopVersionAnnotation.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/HadoopVersionAnnotation.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1762" selectionTopPixel="71"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="InterfaceStability.java" partName="InterfaceStability.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/classification/InterfaceStability.java" title="InterfaceStability.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/classification/InterfaceStability.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/classification/InterfaceStability.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1046" selectionTopPixel="41"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="InterfaceAudience.java" partName="InterfaceAudience.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/classification/InterfaceAudience.java" title="InterfaceAudience.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/classification/InterfaceAudience.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/classification/InterfaceAudience.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1264" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BlockLocation.java" partName="BlockLocation.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/fs/BlockLocation.java" title="BlockLocation.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/fs/BlockLocation.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/fs/BlockLocation.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="13" selectionOffset="988" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CommonConfigurationKeys.java" partName="CommonConfigurationKeys.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/fs/CommonConfigurationKeys.java" title="CommonConfigurationKeys.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/fs/CommonConfigurationKeys.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/fs/CommonConfigurationKeys.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4" selectionTopPixel="402"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ContentSummary.java" partName="ContentSummary.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/fs/ContentSummary.java" title="ContentSummary.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/fs/ContentSummary.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/fs/ContentSummary.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1229" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PutListErrorExample1.java" partName="PutListErrorExample1.java" path="/home/ia/workspace/HBaseClient/src/client/PutListErrorExample1.java" title="PutListErrorExample1.java" tooltip="HBaseClient/src/client/PutListErrorExample1.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/HBaseClient/src/client/PutListErrorExample1.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GetExample.java" partName="GetExample.java" path="/home/ia/workspace/HBaseClient/src/client/GetExample.java" title="GetExample.java" tooltip="HBaseClient/src/client/GetExample.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/HBaseClient/src/client/GetExample.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="428" selectionTopPixel="98"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GetListErrorExample.java" partName="GetListErrorExample.java" path="/home/ia/workspace/HBaseClient/src/client/GetListErrorExample.java" title="GetListErrorExample.java" tooltip="HBaseClient/src/client/GetListErrorExample.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/HBaseClient/src/client/GetListErrorExample.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="288"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GetListExample.java" partName="GetListExample.java" path="/home/ia/workspace/HBaseClient/src/client/GetListExample.java" title="GetListExample.java" tooltip="HBaseClient/src/client/GetListExample.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/HBaseClient/src/client/GetListExample.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="539" selectionTopPixel="915"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Hash.java" partName="Hash.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/util/hash/Hash.java" title="Hash.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/util/hash/Hash.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/util/hash/Hash.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ChecksumException.java" partName="ChecksumException.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/fs/ChecksumException.java" title="ChecksumException.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/fs/ChecksumException.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/fs/ChecksumException.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ChecksumFileSystem.java" partName="ChecksumFileSystem.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/fs/ChecksumFileSystem.java" title="ChecksumFileSystem.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/fs/ChecksumFileSystem.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/fs/ChecksumFileSystem.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DF.java" partName="DF.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/fs/DF.java" title="DF.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/fs/DF.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/fs/DF.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4" selectionTopPixel="1072"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DU.java" partName="DU.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/fs/DU.java" title="DU.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/fs/DU.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/fs/DU.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="5" selectionOffset="1147" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Shell.java" partName="Shell.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/util/Shell.java" title="Shell.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/util/Shell.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/util/Shell.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4945" selectionTopPixel="2074"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ServletUtil.java" partName="ServletUtil.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/util/ServletUtil.java" title="ServletUtil.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/util/ServletUtil.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/util/ServletUtil.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ChecksumUtil.java" partName="ChecksumUtil.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/util/ChecksumUtil.java" title="ChecksumUtil.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/util/ChecksumUtil.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/util/ChecksumUtil.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="README.txt" partName="README.txt" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/security/authentication/README.txt" title="README.txt" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/security/authentication/README.txt" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/security/authentication/README.txt"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LineReader.java" partName="LineReader.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/util/LineReader.java" title="LineReader.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/util/LineReader.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/util/LineReader.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4" selectionTopPixel="858"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DNSToSwitchMapping.java" partName="DNSToSwitchMapping.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/net/DNSToSwitchMapping.java" title="DNSToSwitchMapping.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/net/DNSToSwitchMapping.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/net/DNSToSwitchMapping.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1139" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AbstractMetricsContext.java" partName="AbstractMetricsContext.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/metrics/spi/AbstractMetricsContext.java" title="AbstractMetricsContext.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/metrics/spi/AbstractMetricsContext.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/metrics/spi/AbstractMetricsContext.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2155" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Configurable.java" partName="Configurable.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/conf/Configurable.java" title="Configurable.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/conf/Configurable.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/conf/Configurable.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="840" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Writable.java" partName="Writable.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/io/Writable.java" title="Writable.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/io/Writable.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/io/Writable.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2229" selectionTopPixel="630"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Text.java" partName="Text.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/io/Text.java" title="Text.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/io/Text.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/io/Text.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="17326" selectionTopPixel="10510"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SetFile.java" partName="SetFile.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/io/SetFile.java" title="SetFile.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/io/SetFile.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/io/SetFile.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TwoDArrayWritable.java" partName="TwoDArrayWritable.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/io/TwoDArrayWritable.java" title="TwoDArrayWritable.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/io/TwoDArrayWritable.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/io/TwoDArrayWritable.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4" selectionTopPixel="839"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WritableUtils.java" partName="WritableUtils.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/io/WritableUtils.java" title="WritableUtils.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/io/WritableUtils.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/io/WritableUtils.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WritableName.java" partName="WritableName.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/io/WritableName.java" title="WritableName.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/io/WritableName.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/io/WritableName.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WritableFactories.java" partName="WritableFactories.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/io/WritableFactories.java" title="WritableFactories.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/io/WritableFactories.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/io/WritableFactories.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="17" selectionOffset="1113" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ContextFactory.java" partName="ContextFactory.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/metrics/ContextFactory.java" title="ContextFactory.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/metrics/ContextFactory.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/metrics/ContextFactory.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1536" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MetricsException.java" partName="MetricsException.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/metrics/MetricsException.java" title="MetricsException.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/metrics/MetricsException.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/metrics/MetricsException.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1168" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MetricsUtil.java" partName="MetricsUtil.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/metrics/MetricsUtil.java" title="MetricsUtil.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/metrics/MetricsUtil.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/metrics/MetricsUtil.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1476" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Updater.java" partName="Updater.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/metrics/Updater.java" title="Updater.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/metrics/Updater.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/metrics/Updater.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="861" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MBeanUtil.java" partName="MBeanUtil.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/metrics/util/MBeanUtil.java" title="MBeanUtil.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/metrics/util/MBeanUtil.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/metrics/util/MBeanUtil.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1466" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MetricsDynamicMBeanBase.java" partName="MetricsDynamicMBeanBase.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/metrics/util/MetricsDynamicMBeanBase.java" title="MetricsDynamicMBeanBase.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/metrics/util/MetricsDynamicMBeanBase.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/metrics/util/MetricsDynamicMBeanBase.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2286" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MetricsIntValue.java" partName="MetricsIntValue.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/metrics/util/MetricsIntValue.java" title="MetricsIntValue.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/metrics/util/MetricsIntValue.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/metrics/util/MetricsIntValue.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1389" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MetricsLongValue.java" partName="MetricsLongValue.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/metrics/util/MetricsLongValue.java" title="MetricsLongValue.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/metrics/util/MetricsLongValue.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/metrics/util/MetricsLongValue.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1247" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MetricsRegistry.java" partName="MetricsRegistry.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/metrics/util/MetricsRegistry.java" title="MetricsRegistry.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/metrics/util/MetricsRegistry.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/metrics/util/MetricsRegistry.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1293" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MetricsTimeVaryingInt.java" partName="MetricsTimeVaryingInt.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/metrics/util/MetricsTimeVaryingInt.java" title="MetricsTimeVaryingInt.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/metrics/util/MetricsTimeVaryingInt.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/metrics/util/MetricsTimeVaryingInt.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1670" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MetricsTimeVaryingLong.java" partName="MetricsTimeVaryingLong.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/metrics/util/MetricsTimeVaryingLong.java" title="MetricsTimeVaryingLong.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/metrics/util/MetricsTimeVaryingLong.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/metrics/util/MetricsTimeVaryingLong.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1673" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MetricsTimeVaryingRate.java" partName="MetricsTimeVaryingRate.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/metrics/util/MetricsTimeVaryingRate.java" title="MetricsTimeVaryingRate.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/metrics/util/MetricsTimeVaryingRate.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/metrics/util/MetricsTimeVaryingRate.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1534" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="package-info.java" partName="package-info.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/metrics/util/package-info.java" title="package-info.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/metrics/util/package-info.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/metrics/util/package-info.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="875" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Configured.java" partName="Configured.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/conf/Configured.java" title="Configured.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/conf/Configured.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/conf/Configured.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="945" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BufferedFSInputStream.java" partName="BufferedFSInputStream.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/fs/BufferedFSInputStream.java" title="BufferedFSInputStream.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/fs/BufferedFSInputStream.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/fs/BufferedFSInputStream.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1028" selectionTopPixel="357"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GlobPattern.java" partName="GlobPattern.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/fs/GlobPattern.java" title="GlobPattern.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/fs/GlobPattern.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/fs/GlobPattern.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HardLink.java" partName="HardLink.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/fs/HardLink.java" title="HardLink.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/fs/HardLink.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/fs/HardLink.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FTPException.java" partName="FTPException.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/fs/ftp/FTPException.java" title="FTPException.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/fs/ftp/FTPException.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/fs/ftp/FTPException.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FTPFileSystem.java" partName="FTPFileSystem.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/fs/ftp/FTPFileSystem.java" title="FTPFileSystem.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/fs/ftp/FTPFileSystem.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/fs/ftp/FTPFileSystem.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FTPInputStream.java" partName="FTPInputStream.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/fs/ftp/FTPInputStream.java" title="FTPInputStream.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/fs/ftp/FTPInputStream.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/fs/ftp/FTPInputStream.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FsAction.java" partName="FsAction.java" path="/home/ia/Documents/release-1.0.4/src/core/org/apache/hadoop/fs/permission/FsAction.java" title="FsAction.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/fs/permission/FsAction.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hadoop-1.0.4/core/org/apache/hadoop/fs/permission/FsAction.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4" selectionTopPixel="0"/>
+</editor>
+</editors>
+<views>
+<view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
+<viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+</view>
+<view id="org.eclipse.ui.views.AllMarkersView" partName="Markers">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.allSeverityField" categoryGroup="org.eclipse.ui.ide.type" markerContentGenerator="org.eclipse.ui.ide.allMarkersGenerator" partName="Markers">
+<columnWidths org.eclipse.ui.ide.allSeverityField="400" org.eclipse.ui.ide.locationField="120" org.eclipse.ui.ide.markerType="232" org.eclipse.ui.ide.pathField="160" org.eclipse.ui.ide.resourceField="120"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.allSeverityField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" partName="Snippets"/>
+<view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
+<viewState/>
+</view>
+<view id="org.eclipse.search.ui.views.SearchView" partName="Search">
+<viewState isPinned="false">
+<view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
+<view IMemento.internal.id="org.eclipse.jdt.ui.JavaSearchResultPage" org.eclipse.jdt.search.resultpage.grouping="3" org.eclipse.jdt.search.resultpage.limit="1000" org.eclipse.jdt.search.resultpage.limit_enabled="TRUE" org.eclipse.jdt.search.resultpage.sorting="1" org.eclipse.search.lastActivation="1" org.eclipse.search.resultpage.layout="2"/>
+</viewState>
+</view>
+<view id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" partName="Data Source Explorer"/>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
+<view id="org.eclipse.mylyn.tasks.ui.views.tasks" partName="Task List"/>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
+<view id="org.eclipse.wst.server.ui.ServersView" partName="Servers"/>
+</views>
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jst.j2ee.J2EEPerspective">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.jst.j2ee.internal.perspective.J2EEPerspective" id="org.eclipse.jst.j2ee.J2EEPerspective" label="Java EE"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.doc.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.tasks.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.rse.core.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.jst.j2ee.J2eeMainActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.wst.server.ui.internal.webbrowser.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.eclipse.wst.ws.explorer.explorer"/>
+<show_view_action id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<show_view_action id="org.eclipse.wst.server.ui.ServersView"/>
+<show_view_action id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator"/>
+<show_view_action id="org.eclipse.ui.views.BookmarkView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.PropertySheet"/>
+<show_view_action id="org.eclipse.ui.views.ResourceNavigator"/>
+<show_view_action id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView"/>
+<show_view_action id="org.eclipse.ui.views.AllMarkersView"/>
+<show_view_action id="org.eclipse.mylyn.tasks.ui.views.tasks"/>
+<show_view_action id="org.eclipse.search.ui.views.SearchView"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<new_wizard_action id="org.eclipse.jpt.jpa.ui.wizard.newJpaProject"/>
+<new_wizard_action id="org.eclipse.jst.j2ee.ui.project.facet.EarProjectWizard"/>
+<new_wizard_action id="org.eclipse.jst.servlet.ui.project.facet.WebProjectWizard"/>
+<new_wizard_action id="org.eclipse.jst.ejb.ui.project.facet.EjbProjectWizard"/>
+<new_wizard_action id="org.eclipse.jst.j2ee.jca.ui.internal.wizard.ConnectorProjectWizard"/>
+<new_wizard_action id="org.eclipse.jst.j2ee.ui.project.facet.appclient.AppClientProjectWizard"/>
+<new_wizard_action id="org.eclipse.wst.web.ui.internal.wizards.SimpleWebProjectWizard"/>
+<new_wizard_action id="org.eclipse.jpt.ui.wizard.newJpaProject"/>
+<new_wizard_action id="org.eclipse.jst.servlet.ui.internal.wizard.AddServletWizard"/>
+<new_wizard_action id="org.eclipse.jst.ejb.ui.internal.wizard.AddSessionBeanWizard"/>
+<new_wizard_action id="org.eclipse.jst.ejb.ui.internal.wizard.AddMessageDrivenBeanWizard"/>
+<new_wizard_action id="org.eclipse.jpt.ui.wizard.newEntity"/>
+<new_wizard_action id="org.eclipse.jst.ws.creation.ui.wizard.serverwizard"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.file"/>
+<perspective_action id="org.eclipse.jpt.ui.jpaPerspective"/>
+<perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaPerspective"/>
+<perspective_action id="org.eclipse.ui.resourcePerspective"/>
+<perspective_action id="org.eclipse.wst.web.ui.webDevPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<fastViewBars>
+<fastViewBar fastViewLocation="131072" id="topRight" orientation="512" selectedTabId="org.eclipse.ui.views.ContentOutline" style="0">
+<fastViews>
+<view id="org.eclipse.ui.views.ContentOutline" ratio="0.3"/>
+<view id="org.eclipse.mylyn.tasks.ui.views.tasks" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+<fastViewBar fastViewLocation="1024" id="bottomRight" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="0">
+<fastViews>
+<view id="org.eclipse.ui.views.AllMarkersView" ratio="0.3"/>
+<view id="org.eclipse.ui.views.PropertySheet" ratio="0.3"/>
+<view id="org.eclipse.wst.server.ui.ServersView" ratio="0.3"/>
+<view id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" ratio="0.3"/>
+<view id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" ratio="0.3"/>
+<view id="org.eclipse.ui.console.ConsoleView" ratio="0.2990654"/>
+<view id="org.eclipse.search.ui.views.SearchView" ratio="0.2990654"/>
+</fastViews>
+</fastViewBar>
+</fastViewBars>
+<layout>
+<mainWindow>
+<info folder="true" part="topLeft">
+<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.PackagesView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="topLeft">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.2316879" ratioLeft="291" ratioRight="965" relationship="2" relative="topLeft"/>
+<info folder="true" part="bottomRight" ratio="0.69854134" ratioLeft="431" ratioRight="186" relationship="4" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.AllMarkersView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
+<page content="org.eclipse.wst.server.ui.ServersView" label="LabelNotFound"/>
+<page content="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" label="LabelNotFound"/>
+<page content="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
+<page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="topRight" ratio="0.69920844" ratioLeft="530" ratioRight="228" relationship="2" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
+<page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hadoop-1.0.4/core/org/apache/hadoop/conf/Configurable.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hadoop-1.0.4/core/org/apache/hadoop/io/Writable.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hadoop-1.0.4/core/org/apache/hadoop/io/Text.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hadoop-1.0.4/core/org/apache/hadoop/io/SetFile.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hadoop-1.0.4/core/org/apache/hadoop/io/TwoDArrayWritable.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hadoop-1.0.4/core/org/apache/hadoop/io/WritableUtils.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hadoop-1.0.4/core/org/apache/hadoop/io/WritableName.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hadoop-1.0.4/core/org/apache/hadoop/io/WritableFactories.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hadoop-1.0.4/core/org/apache/hadoop/metrics/ContextFactory.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hadoop-1.0.4/core/org/apache/hadoop/metrics/MetricsException.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hadoop-1.0.4/core/org/apache/hadoop/metrics/MetricsUtil.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hadoop-1.0.4/core/org/apache/hadoop/metrics/Updater.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hadoop-1.0.4/core/org/apache/hadoop/metrics/util/MBeanUtil.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hadoop-1.0.4/core/org/apache/hadoop/metrics/util/MetricsDynamicMBeanBase.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hadoop-1.0.4/core/org/apache/hadoop/metrics/util/MetricsIntValue.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hadoop-1.0.4/core/org/apache/hadoop/metrics/util/MetricsLongValue.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hadoop-1.0.4/core/org/apache/hadoop/metrics/util/MetricsRegistry.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hadoop-1.0.4/core/org/apache/hadoop/metrics/util/MetricsTimeVaryingInt.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hadoop-1.0.4/core/org/apache/hadoop/metrics/util/MetricsTimeVaryingLong.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hadoop-1.0.4/core/org/apache/hadoop/metrics/util/MetricsTimeVaryingRate.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hadoop-1.0.4/core/org/apache/hadoop/metrics/util/package-info.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hadoop-1.0.4/core/org/apache/hadoop/fs/BlockLocation.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hadoop-1.0.4/core/org/apache/hadoop/HadoopVersionAnnotation.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hadoop-1.0.4/core/org/apache/hadoop/classification/InterfaceStability.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hadoop-1.0.4/core/org/apache/hadoop/classification/InterfaceAudience.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hadoop-1.0.4/core/org/apache/hadoop/conf/Configurable.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hadoop-1.0.4/core/org/apache/hadoop/conf/Configuration.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hadoop-1.0.4/core/org/apache/hadoop/conf/Configured.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hadoop-1.0.4/core/org/apache/hadoop/fs/BufferedFSInputStream.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hadoop-1.0.4/core/org/apache/hadoop/fs/DF.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hadoop-1.0.4/core/org/apache/hadoop/fs/GlobPattern.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hadoop-1.0.4/core/org/apache/hadoop/fs/HardLink.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hadoop-1.0.4/core/org/apache/hadoop/fs/ftp/FTPException.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hadoop-1.0.4/core/org/apache/hadoop/fs/ftp/FTPFileSystem.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hadoop-1.0.4/core/org/apache/hadoop/fs/ftp/FTPInputStream.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hadoop-1.0.4/core/org/apache/hadoop/fs/permission/FsAction.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Study/src/gener/Helper.java"/>
+</editors>
+<item historyLabel="Text.java" index="2">
+<position info="not_deleted" x="2881" y="0"/>
+</item>
+<item historyLabel="SetFile.java" index="3">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="Text.java" index="2">
+<position info="not_deleted" x="17326" y="0"/>
+</item>
+<item historyLabel="TwoDArrayWritable.java" index="4">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="Writable.java" index="1">
+<position info="not_deleted" x="2229" y="0"/>
+</item>
+<item historyLabel="WritableUtils.java" index="5">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="WritableName.java" index="6">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="WritableFactories.java" index="7">
+<position info="not_deleted" x="1113" y="17"/>
+</item>
+<item historyLabel="ContextFactory.java" index="8">
+<position info="not_deleted" x="1536" y="0"/>
+</item>
+<item historyLabel="MetricsException.java" index="9">
+<position info="not_deleted" x="1168" y="0"/>
+</item>
+<item historyLabel="MetricsUtil.java" index="10">
+<position info="not_deleted" x="1476" y="0"/>
+</item>
+<item historyLabel="Updater.java" index="11">
+<position info="not_deleted" x="861" y="0"/>
+</item>
+<item historyLabel="MBeanUtil.java" index="12">
+<position info="not_deleted" x="1466" y="0"/>
+</item>
+<item historyLabel="MetricsDynamicMBeanBase.java" index="13">
+<position info="not_deleted" x="2286" y="0"/>
+</item>
+<item historyLabel="MetricsIntValue.java" index="14">
+<position info="not_deleted" x="1389" y="0"/>
+</item>
+<item historyLabel="MetricsLongValue.java" index="15">
+<position info="not_deleted" x="1247" y="0"/>
+</item>
+<item historyLabel="MetricsRegistry.java" index="16">
+<position info="not_deleted" x="1293" y="0"/>
+</item>
+<item historyLabel="MetricsTimeVaryingInt.java" index="17">
+<position info="not_deleted" x="1670" y="0"/>
+</item>
+<item historyLabel="MetricsTimeVaryingLong.java" index="18">
+<position info="not_deleted" x="1673" y="0"/>
+</item>
+<item historyLabel="MetricsTimeVaryingRate.java" index="19">
+<position info="not_deleted" x="1534" y="0"/>
+</item>
+<item historyLabel="package-info.java" index="20">
+<position info="not_deleted" x="875" y="0"/>
+</item>
+<item historyLabel="Configurable.java" index="0">
+<position info="not_deleted" x="1120" y="0"/>
+</item>
+<item historyLabel="BlockLocation.java" index="21">
+<position info="not_deleted" x="988" y="13"/>
+</item>
+<item historyLabel="HadoopVersionAnnotation.java" index="22">
+<position info="not_deleted" x="3" y="0"/>
+</item>
+<item historyLabel="HadoopVersionAnnotation.java" index="22">
+<position info="not_deleted" x="1762" y="0"/>
+</item>
+<item historyLabel="InterfaceStability.java" index="23">
+<position info="not_deleted" x="3" y="0"/>
+</item>
+<item historyLabel="InterfaceStability.java" index="23">
+<position info="not_deleted" x="1046" y="0"/>
+</item>
+<item historyLabel="InterfaceAudience.java" index="24">
+<position info="not_deleted" x="3" y="0"/>
+</item>
+<item historyLabel="InterfaceAudience.java" index="24">
+<position info="not_deleted" x="1264" y="0"/>
+</item>
+<item historyLabel="Configurable.java" index="25">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="Configurable.java" index="25">
+<position info="not_deleted" x="1120" y="0"/>
+</item>
+<item historyLabel="Configuration.java" index="26">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="Configuration.java" index="26">
+<position info="not_deleted" x="5368" y="0"/>
+</item>
+<item historyLabel="Configured.java" index="27">
+<position info="not_deleted" x="945" y="0"/>
+</item>
+<item historyLabel="Configurable.java" index="25">
+<position info="not_deleted" x="840" y="0"/>
+</item>
+<item historyLabel="Configuration.java" index="26">
+<position info="not_deleted" x="5368" y="0"/>
+</item>
+<item historyLabel="BlockLocation.java" index="21">
+<position info="not_deleted" x="988" y="13"/>
+</item>
+<item historyLabel="BufferedFSInputStream.java" index="28">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="DF.java" index="29">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="GlobPattern.java" index="30">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="HardLink.java" index="31">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="FTPException.java" index="32">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="FTPFileSystem.java" index="33">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="FTPInputStream.java" index="34">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="FsAction.java" index="35">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="Helper.java" index="36">
+<position info="not_deleted" x="414" y="0"/>
+</item>
+<item historyLabel="Helper.java" index="36">
+<position info="not_deleted" x="504" y="0"/>
+</item>
+<item historyLabel="Helper.java" index="36">
+<position info="not_deleted" x="607" y="0"/>
+</item>
+<item historyLabel="Helper.java" index="36">
+<position info="not_deleted" x="547" y="0"/>
+</item>
+<item active="true" historyLabel="Helper.java" index="36">
+<position info="not_deleted" x="662" y="0"/>
+</item>
+</navigationHistory>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+<trimLayout>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="topRight"/>
+</trimArea>
+<trimArea IMemento.internal.id="128">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
+<trimItem IMemento.internal.id="org.eclipse.mylyn.tasks.ui.trim.container"/>
+</trimArea>
+<trimArea IMemento.internal.id="1024">
+<trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
+<trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="bottomRight"/>
+</trimArea>
+</trimLayout>
+</window>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FsAction.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/fs/permission/FsAction.java">
+<persistable path="/Hadoop-1.0.4/core/org/apache/hadoop/fs/permission/FsAction.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FTPInputStream.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/fs/ftp/FTPInputStream.java">
+<persistable path="/Hadoop-1.0.4/core/org/apache/hadoop/fs/ftp/FTPInputStream.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FTPFileSystem.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/fs/ftp/FTPFileSystem.java">
+<persistable path="/Hadoop-1.0.4/core/org/apache/hadoop/fs/ftp/FTPFileSystem.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FTPException.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/fs/ftp/FTPException.java">
+<persistable path="/Hadoop-1.0.4/core/org/apache/hadoop/fs/ftp/FTPException.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HardLink.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/fs/HardLink.java">
+<persistable path="/Hadoop-1.0.4/core/org/apache/hadoop/fs/HardLink.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GlobPattern.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/fs/GlobPattern.java">
+<persistable path="/Hadoop-1.0.4/core/org/apache/hadoop/fs/GlobPattern.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BufferedFSInputStream.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/fs/BufferedFSInputStream.java">
+<persistable path="/Hadoop-1.0.4/core/org/apache/hadoop/fs/BufferedFSInputStream.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Configured.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/conf/Configured.java">
+<persistable path="/Hadoop-1.0.4/core/org/apache/hadoop/conf/Configured.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="package-info.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/metrics/util/package-info.java">
+<persistable path="/Hadoop-1.0.4/core/org/apache/hadoop/metrics/util/package-info.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MetricsTimeVaryingRate.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/metrics/util/MetricsTimeVaryingRate.java">
+<persistable path="/Hadoop-1.0.4/core/org/apache/hadoop/metrics/util/MetricsTimeVaryingRate.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MetricsTimeVaryingLong.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/metrics/util/MetricsTimeVaryingLong.java">
+<persistable path="/Hadoop-1.0.4/core/org/apache/hadoop/metrics/util/MetricsTimeVaryingLong.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MetricsTimeVaryingInt.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/metrics/util/MetricsTimeVaryingInt.java">
+<persistable path="/Hadoop-1.0.4/core/org/apache/hadoop/metrics/util/MetricsTimeVaryingInt.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MetricsRegistry.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/metrics/util/MetricsRegistry.java">
+<persistable path="/Hadoop-1.0.4/core/org/apache/hadoop/metrics/util/MetricsRegistry.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MetricsLongValue.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/metrics/util/MetricsLongValue.java">
+<persistable path="/Hadoop-1.0.4/core/org/apache/hadoop/metrics/util/MetricsLongValue.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MetricsIntValue.java" tooltip="Hadoop-1.0.4/core/org/apache/hadoop/metrics/util/MetricsIntValue.java">
+<persistable path="/Hadoop-1.0.4/core/org/apache/hadoop/metrics/util/MetricsIntValue.java"/>
+</file>
+</mruList>
+</workbench>

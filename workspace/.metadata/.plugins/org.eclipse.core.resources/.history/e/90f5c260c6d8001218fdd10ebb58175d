@@ -1,0 +1,86 @@
+package gener;
+
+import java.io.IOException;
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.io.IntWritable;
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.Job;
+import org.apache.hadoop.mapreduce.Mapper;
+import org.apache.hadoop.mapreduce.Reducer;
+import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
+import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
+import org.apache.hadoop.util.GenericOptionsParser;
+
+/**
+ * 新版本的API,1.0.4版本中的MapReduce接口。
+ * 相对于之前的老版本，有些调整，但是整体思路没有变化。
+ * 创建Map类，每个Map类必须继承于import org.apache.hadoop.mapreduce.Mapper
+ * 并实现一个map方法。
+ * 创建Reduce类，每个Reduce类必须继承于import org.apache.hadoop.mapreduce.Reducer
+ * 并实现一个reduce方法。
+ * @author ia
+ *
+ */
+public class OdCount {
+
+  public static class OdCountMapper 
+       extends Mapper<Object, Text, Text, IntWritable>{
+
+    
+    public void map(Object key, Text value, Context context
+                    ) throws IOException, InterruptedException {  
+        String FromStation  ;  
+        String ToStation   ;
+      Extract extract = new Extract();
+      if(extract.ExtractStation(value.toString()).size()==2){
+       FromStation = extract.ExtractStation(value.toString()).get(0);
+       ToStation = extract.ExtractStation(value.toString()).get(1);
+       context.write(new Text(FromStation+"\t"+ToStation) ,  new IntWritable(1)) ;   
+      }
+      if(extract.ExtractTeleCode(value.toString()).length == 4){
+    	  String [] teleCode = extract.ExtractTeleCode(value.toString()) ;
+    	  System.out.println(teleCode[0]);
+      }
+    }
+  }
+  
+  public static class OdCountReducer 
+       extends Reducer<Text,IntWritable,Text,IntWritable> {
+    private IntWritable result = new IntWritable();
+
+    public void reduce(Text key, Iterable<IntWritable> values, 
+                       Context context
+                       ) throws IOException, InterruptedException {
+      int sum = 0;
+      for (IntWritable val : values) {
+        sum += val.get();
+      }
+      result.set(sum);
+      context.write(key, result);
+    }
+  }
+  
+  public static void main(String[] args) throws Exception {
+    Configuration conf = new Configuration();
+    String[] otherArgs = new GenericOptionsParser(conf, args).getRemainingArgs();
+    if (otherArgs.length != 2) {
+      System.err.println("Usage: wordcount <in> <out>");
+      System.exit(2);
+    }
+    /**
+     * Job的属性的配置。
+     */
+    Job job = new Job(conf, "word count");
+    job.setJarByClass(OdCount.class);
+    job.setMapperClass(OdCountMapper.class);
+    job.setCombinerClass(OdCountReducer.class);
+    job.setReducerClass(OdCountReducer.class);
+    job.setOutputKeyClass(Text.class);
+    job.setOutputValueClass(IntWritable.class);
+    FileInputFormat.addInputPath(job, new Path(otherArgs[0]));
+    FileOutputFormat.setOutputPath(job, new Path(otherArgs[1]));
+    System.exit(job.waitForCompletion(true) ? 0 : 1);
+  }
+}
+

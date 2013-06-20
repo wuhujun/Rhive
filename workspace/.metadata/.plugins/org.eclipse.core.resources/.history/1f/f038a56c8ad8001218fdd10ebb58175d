@@ -1,0 +1,30 @@
+package gener;
+
+public class Extract {
+   /**
+    * 提取始发站和终点站。
+    */
+   public String [] ExtractStation(String record){
+      String [] station = new String [2];
+      String tmp =  record.replaceAll("[A-Za-z0-9-:]" , "  ");
+      station = tmp.split(" " , 2) ;
+      if(station.length==2){
+      for(int i =0 ; i < station.length ;i++){
+    	  station[i] = station[i].trim();
+      }
+          return station ;
+      }
+      else{
+    	  return null ;
+      }
+   }
+   /**
+    * 提取开车日期
+    */
+   public String ExtractDate(String record){
+	   String date = new String() ;
+	   String tmp = record.replaceAll("", " ");
+	   
+	   return date ;
+   }
+}

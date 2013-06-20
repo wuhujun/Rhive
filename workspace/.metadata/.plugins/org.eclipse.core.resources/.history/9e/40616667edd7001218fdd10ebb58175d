@@ -1,0 +1,42 @@
+package gener;
+
+//cc FileSystemCat Displays files from a Hadoop filesystem on standard output by using the FileSystem directly
+import java.io.InputStream;
+
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.fs.FileSystem;
+import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.io.IOUtils;
+/**
+ * 文件系统输出。
+ * @author ia
+ *
+ */
+
+//vv FileSystemCat
+public class FileSystemCat {
+
+public static void main(String[] args) throws Exception {
+ if(args.length!=1){
+	 System.err.println(" usage  : FileSystemCat  < FileLocation >  ; ") ;
+ }
+ 
+ String uri = args[0];
+ Configuration conf = new Configuration();
+ 
+ FileSystem fs = FileSystem.get(conf);
+ //输入流。 
+ InputStream in = null;
+ try {
+   //创建一个输入流实例。
+   in = fs.open(new Path(uri));
+   //从输入流到标准输出流之间拷贝数据。
+   IOUtils.copyBytes(in,  System.out , 4096 , false); 
+ } finally {
+   //关闭输入流。
+   IOUtils.closeStream(in);
+ }
+}
+}
+//^^ FileSystemCat
+

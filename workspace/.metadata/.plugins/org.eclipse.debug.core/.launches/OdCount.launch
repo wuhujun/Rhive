@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/TRS/src/gener/OdCount.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="gener.OdCount"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="hdfs://Master.Hadoop:9000/user/root/input/sale_record20090101.bcp&#10;hdfs://Master.Hadoop:9000/user/root/output/op_091"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="TRS"/>
+</launchConfiguration>

@@ -1,0 +1,66 @@
+package gener;
+// cc FileDecompressor A program to decompress a compressed file using a codec inferred from the file's extension
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.URI;
+
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.fs.FileSystem;
+import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.io.IOUtils;
+import org.apache.hadoop.io.compress.CompressionCodec;
+import org.apache.hadoop.io.compress.CompressionCodecFactory;
+
+/**
+ * 文件解压缩。
+ * @author ia
+ *
+ */
+// vv FileDecompressor
+public class FileDecompressor {
+
+  public static void main(String[] args) throws Exception {
+    String uri = args[0];
+    Configuration conf = new Configuration();
+    //文件系统实例，并指定当前路径。
+    FileSystem fs = FileSystem.get(URI.create(uri), conf);
+    //压缩文件输入路径。
+    Path inputPath = new Path(uri);
+    //基于默认配置的A factory that will find the correct codec for a given filename.
+    //codec :编解码器。
+    CompressionCodecFactory factory = new CompressionCodecFactory(conf);
+    /**
+    System.out.println("factory：");
+    System.out.println(factory.toString());
+    */
+    //压缩编解码器。
+    CompressionCodec codec = factory.getCodec(inputPath);
+    
+    if (codec == null) {
+      System.err.println("No codec found for " + uri);
+      System.exit(1);
+    }
+    /**
+    System.out.println("codec :");
+    System.out.print(codec.toString());
+    */
+    //输出路径。
+    String outputUri =
+    CompressionCodecFactory.removeSuffix(uri, codec.getDefaultExtension()); 
+
+    InputStream in = null;
+    OutputStream out = null;
+    try {
+      //编解码器根据指定的输入路径生成一个解码后的输入流对象。
+      in = codec.createInputStream(fs.open(inputPath));
+      //创建一个输出流
+      out = fs.create(new Path(outputUri));
+      //在两个流之间进行流的拷贝。
+      IOUtils.copyBytes(in, out, conf);
+    } finally {
+      IOUtils.closeStream(in);
+      IOUtils.closeStream(out);
+    }
+  }
+}
+// ^^ FileDecompressor

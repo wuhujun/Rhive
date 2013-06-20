@@ -1,0 +1,60 @@
+package ch04;
+
+//cc SequenceFileWriteDemo Writing a SequenceFile
+import java.io.IOException;
+import java.net.URI;
+
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.fs.FileSystem;
+import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.io.IOUtils;
+import org.apache.hadoop.io.IntWritable;
+import org.apache.hadoop.io.SequenceFile;
+import org.apache.hadoop.io.Text;
+ /**
+  * 序列化文件的写入。
+  * @author ia
+  *
+  */
+//vv SequenceFileWriteDemo
+public class SequenceFileWriteDemo {
+
+  //需要写入的内容。	
+private static final String[] DATA = {
+ "One, two, buckle my shoe",
+ "Three, four, shut the door",
+ "Five, six, pick up sticks",
+ "Seven, eight, lay them straight",
+ "Nine, ten, a big fat hen"
+};
+
+public static void main(String[] args) throws IOException {
+ String uri = args[0];
+ Configuration conf = new Configuration();
+ FileSystem fs = FileSystem.get(URI.create(uri), conf);
+ Path path = new Path(uri);
+
+ IntWritable key = new IntWritable();
+ Text value = new Text();
+     //序列化写入。
+ SequenceFile.Writer writer = null;
+ try {
+	 //创建序列化写入的实例。
+   writer = SequenceFile.createWriter(fs, conf, path,
+       key.getClass(), value.getClass());
+   
+   for (int i = 0; i < 100; i++) {
+	 //设置Key的值。
+     key.set(100 - i);
+     //设置value的值。
+     value.set(DATA[i % DATA.length]);
+     System.out.printf("[%s]\t%s\t%s\n", writer.getLength(), key, value);
+     //将键值对写入到序列化文件中。
+     writer.append(key, value);
+   }
+ } finally {
+   IOUtils.closeStream(writer);
+ }
+}
+}
+//^^ SequenceFileWriteDemo

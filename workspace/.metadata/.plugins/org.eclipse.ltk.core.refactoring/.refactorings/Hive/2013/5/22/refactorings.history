@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;Hive&apos;&#x0A;- Original project: &apos;Hive&apos;&#x0A;- Original element: &apos;gener.Help.java&apos;" description="Delete element" element1="/src&lt;gener{Help.java" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1369902422460" subPackages="false" version="1.0"/>
+</session>
